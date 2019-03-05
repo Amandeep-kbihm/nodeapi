@@ -73,5 +73,10 @@ router.get('/', function(req, res, next) {
     Property.findAll().then(results => {
         res.json({status: true, results});
     })
+});
+router.patch('/:id', function(req, res, next) { 
+    Property.findAll().then(results => {
+        res.json({status: true, results});
+    })
 });    
 module.exports = router
